@@ -1,0 +1,17 @@
+/ {
+   valve {
+      compatible = "gpio-leds"; // HACK
+      //compatible = "valve";
+
+      port017: p017 {
+         label = "Valve auf";
+         gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+      };
+   };
+
+   aliases {
+      valve1 = &port017; 
+   };
+};
+
+

@@ -1,0 +1,16 @@
+description: |
+    Valves as example fort a output ports.
+    This is yust a copy of ..\zephyr\dts\bindings\gpio\gpio-leds.yaml
+
+compatible = "valve";
+
+child-binding:
+    description: GPIO valves child node
+    properties:
+       gpios:
+          type: phandle-array
+          required: true
+       label:
+          required: true
+          type: string
+          description: Human readable string describing the device (used as device_get_binding() argument)
