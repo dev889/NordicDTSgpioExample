@@ -2,7 +2,7 @@ description: |
     Valves as example fort a output ports.
     This is yust a copy of ..\zephyr\dts\bindings\gpio\gpio-leds.yaml
 
-compatible = "valve";
+compatible: "steinel,valve"
 
 child-binding:
     description: GPIO valves child node
