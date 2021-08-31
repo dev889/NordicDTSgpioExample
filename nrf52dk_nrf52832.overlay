@@ -1,7 +1,7 @@
 / {
    valve {
-      compatible = "gpio-leds"; // HACK
-      //compatible = "valve";
+      //compatible = "gpio-leds"; // HACK
+      compatible = "valve";
 
       port017: p017 {
          label = "Valve auf";

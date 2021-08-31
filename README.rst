@@ -14,6 +14,9 @@ It works with compatible = "gpio-leds"; but it failes with compatible = "valve";
 zephyr/include/generated/devicetree_unfixed.h:4089:32: error: 'DT_N_S_valve_S_p017_P_gpios_IDX_0_PH_P_label' undeclared (first use in this function)
  4089 | #define DT_N_ALIAS_valve1      DT_N_S_valve_S_p017
 
+West version: v0.11.0
+NSC V1.5.1.
+
 Requirements
 ************
 The example was tested on nrf52-DK
