@@ -3,6 +3,9 @@
 Blinky
 ######
 
+Repo to the ticket in the Nordic devzone
+https://devzone.nordicsemi.com/f/nordic-q-a/77528/missing-binding-for-out-of-tree-driver
+
 Overview
 ********
 C:\_def\nsc\v1.5.1\zephyr\samples\basic\blinky was changed to a custom port 
@@ -16,6 +19,12 @@ zephyr/include/generated/devicetree_unfixed.h:4089:32: error: 'DT_N_S_valve_S_p0
 
 West version: v0.11.0
 NSC V1.5.1.
+
+Finally the problem is solved:  
+
+The valve.yaml has to be placed (out-of-tree-project)\dts\bindings
+
+Another improvement is not to use a costume board but define nrf52dk_nrf52832.overlay and compile with west build -p -b nrf52dk_nrf52832 --build-dir build. The nrf52dk_nrf52832.overlay is placed in (out-of-tree-project)\boards
 
 Requirements
 ************
